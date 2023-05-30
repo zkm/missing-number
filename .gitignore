@@ -1,0 +1,24 @@
+# Compiled output
+*.class
+*.o
+*.obj
+*.pyc
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Build output
+build/
+dist/
+out/
+
+# Editor/IDE files
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS-generated files
+.DS_Store
+Thumbs.db
