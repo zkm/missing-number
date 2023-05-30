@@ -4,19 +4,19 @@ This repository provides implementations of the missing number script in various
 
 ## Languages
 
-- ActionScript
-- Bash
-- C++
-- ColdFusion
-- Go
-- Java
-- JavaScript
-- Perl
-- PHP
-- Python
-- Ruby
-- Swift
-- TypeScript
+- [ActionScript](actionscript/README.md)
+- [Bash](bash/README.md)
+- [C++](cpp/README.md)
+- [ColdFusion](coldfusion/README.md)
+- [Go](go/README.md)
+- [Java](java/README.md)
+- [JavaScript](javascript/README.md)
+- [Perl](perl/README.md)
+- [PHP](php/README.md)
+- [Python](python/README.md)
+- [Ruby](ruby/README.md)
+- [Swift](swift/README.md)
+- [TypeScript](typescript/README.md)
 
 ## Usage
 
