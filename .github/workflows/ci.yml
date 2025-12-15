@@ -52,7 +52,7 @@ jobs:
 
       - name: Java
         run: |
-          javac java/main.java
+          javac java/Main.java
           java -cp java Main
 
       - name: C++
