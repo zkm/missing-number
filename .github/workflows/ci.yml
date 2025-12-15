@@ -1,0 +1,79 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  run-scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22.x'
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Bash
+        run: |
+          bash bash/missingNumber.sh
+
+      - name: Python
+        run: |
+          python3 --version
+          python3 python/missingNumber.py
+
+      - name: JavaScript
+        run: |
+          node --version
+          node javascript/missingNumber.js
+
+      - name: TypeScript (compiled JS)
+        run: |
+          node typescript/missingNumber.js
+
+      - name: Go
+        run: |
+          go version
+          go run go/missingNumber.go
+
+      - name: Java
+        run: |
+          javac java/main.java
+          java -cp java Main
+
+      - name: C++
+        run: |
+          g++ -std=c++17 cpp/missingNumber.cpp -o cpp/a.out
+          ./cpp/a.out
+
+      - name: Ruby
+        run: |
+          ruby --version
+          ruby ruby/missingNumber.rb
+
+      - name: PHP
+        run: |
+          php -v
+          php php/missingNumber.php
+
+      - name: Perl
+        run: |
+          perl -v
+          perl perl/missingNumber.pl
+
+      # Note: Swift, ActionScript, and ColdFusion are not included
+      # because they are not available on the default ubuntu-latest runner.

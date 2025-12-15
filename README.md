@@ -22,7 +22,11 @@ This repository provides implementations of the missing number script in various
 
 1. Choose the programming language you want to use.
 2. Clone or download the repository for that language.
-3. [TODO] Follow the instructions provided in the respective README file of the language.
+3. Follow the instructions provided in the respective README file of the language.
+
+## CI
+
+This repo includes a GitHub Actions workflow that runs each language script on pushes and pull requests to ensure they execute successfully. See [.github/workflows/ci.yml](.github/workflows/ci.yml).
 
 ### License
 
